@@ -20,8 +20,8 @@ exports.active = true;
 
 exports.fn = function(item, params) {
     var removeAttrs = [];
-    if (Array.isArray(params.removeAttrs)) {
-        removeAttrs = removeAttrs.concat(params.removeAttrs);
+    if (Array.isArray(params.attrs)) {
+        removeAttrs = removeAttrs.concat(params.attrs);
     }
 
     if (item.elem) {
